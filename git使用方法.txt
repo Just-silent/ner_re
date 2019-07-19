@@ -1,0 +1,12 @@
+上传：	git add .	表示上传所有文件
+         	git add 具体文件
+	
+	git commit -u "信息"
+
+	git push origin master	上传成功
+
+查看变动信息	git status
+
+保存本地更改	git stash	
+
+克隆：	git pull origin master
