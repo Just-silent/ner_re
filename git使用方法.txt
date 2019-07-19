@@ -9,4 +9,4 @@
 
 保存本地更改	git stash	
 
-克隆：	git pull origin master
+下拉：	git pull origin master
