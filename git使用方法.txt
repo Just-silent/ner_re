@@ -1,9 +1,9 @@
-上传：	git add .	表示上传所有文件
+上传：	git add .	表示变更的文件
          	git add 具体文件
 	
 	git commit -m "信息"
 
-	git push origin master	上传成功
+	git push origin master	变更成功
 
 查看变动信息	git status
 
