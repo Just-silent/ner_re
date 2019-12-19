@@ -67,16 +67,16 @@
 - https://blog.csdn.net/likianta/article/details/86318565(solution method)
 
 ## resources目录结构
-- conlleval.pl
-- crf_learn.exe
-- crf_test.exe
-- libcrfpp.dll
-- model
-- train.txt
-- test.txt
-- output.txt
-- template
-- 注解：conlleval.pl测评脚本，
+- conlleval.pl ：测评脚本
+- crf_learn.exe ：训练程序
+- crf_test.exe ：测试程序
+- libcrfpp.dll ：类库
+- model ：模型
+- train.txt ：训练预料
+- test.txt ：测试语料
+- output.txt： test->output 三列式
+- template ：模板
+
 
 
 
