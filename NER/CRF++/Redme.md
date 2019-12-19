@@ -86,6 +86,12 @@ accuracy:  98.09%; precision:  89.79%; recall:  80.83%; FB1:  85.07
 - https://blog.csdn.net/likianta/article/details/86318565(solution method)
 
 
+## 总结
+- 人民日报NER相同的方法
+- template模板需要了解
+- 这只是一个CRF++0.58工具包的使用，具体CRF的用法很那看出，此项目初步了解NER的处理流程，继续了解需要进一步学习其他实际的模型。
+
+
 
 
 
