@@ -21,6 +21,24 @@
 ...
 ```
 
+## 结构
+- template为特征模版；
+- test.data为测试数据；train.data为训练数据
+- crf_learn.exe：CRF++的训练程序；
+- crf_test.exe：CRF++的预测程序；
+- libcrfpp.dll：训练程序和预测程序需要使用的静态链接库。
+
+## resources目录结构
+- conlleval.pl ：测评脚本
+- crf_learn.exe ：训练程序
+- crf_test.exe ：测试程序
+- libcrfpp.dll ：类库
+- model ：模型
+- train.txt ：训练预料
+- test.txt ：测试语料
+- output.txt： test->output 三列式
+- template ：模板
+
 ## 训练
 - cmd
 - cd进入该文件夹
@@ -51,31 +69,20 @@
 3. 注：使用评测工具前要将评测文件中的所有制表位转换成空格，否则评测工具会出错。
 ```
 
-## 结构
-- template为特征模版；
-- test.data为测试数据；train.data为训练数据
-- crf_learn.exe：CRF++的训练程序；
-- crf_test.exe：CRF++的预测程序；
-- libcrfpp.dll：训练程序和预测程序需要使用的静态链接库。
-
-
 ## 准确率
+processed 434061 tokens with 12339 phrases; found: 11107 phrases; correct: 9973.
+accuracy:  98.09%; precision:  89.79%; recall:  80.83%; FB1:  85.07
+              LOC: precision:  90.88%; recall:  85.08%; FB1:  87.88  5263
+              ORG: precision:  83.96%; recall:  75.94%; FB1:  79.75  2962
+              PER: precision:  93.79%; recall:  78.53%; FB1:  85.48  2882
+
 
 
 ## 遇到的难题
 - Windows下：improt CRFPP失败
 - https://blog.csdn.net/likianta/article/details/86318565(solution method)
 
-## resources目录结构
-- conlleval.pl ：测评脚本
-- crf_learn.exe ：训练程序
-- crf_test.exe ：测试程序
-- libcrfpp.dll ：类库
-- model ：模型
-- train.txt ：训练预料
-- test.txt ：测试语料
-- output.txt： test->output 三列式
-- template ：模板
+
 
 
 
