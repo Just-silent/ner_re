@@ -39,6 +39,9 @@
 - output.txt： test->output 三列式
 - template ：模板
 
+## predict
+- 调用模型，返回预测实体。
+
 ## 训练
 - cmd
 - cd进入该文件夹
