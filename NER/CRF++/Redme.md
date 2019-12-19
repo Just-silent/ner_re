@@ -24,9 +24,32 @@
 ## 训练
 - cmd
 - cd进入该文件夹
-- crf_learn template train.data model   训练数据
+- crf_learn template train.data model   训练数据    (出错的话：clr_learn -f 3 -c 1.5 tempalte train.data model)
+- 在这里有四个参数可以调整：
+```
+    -a CRF-L2 or CRF-L1
+ 规范化算法的选择。默认是CRF-L2。一般来说L2算法效果要比L1算法稍微好一点，虽然L1算法中非零特征的数值要比L2中大幅度的小。
+
+    -c float
+    这个参数设置CRF的hyper-parameter。c的数值越大，CRF拟合训练数据的程度越高。这个参数可以调整过拟合和不拟合之间的平衡度。这个参数可以通过交叉验证等方法寻找较优的参数。
+
+    -f NUM
+    这个参数设置特征的cut-off threshold。CRF++使用训练数据中至少出现NUM次的 特征。默认值为1。当使用CRF++到大规模数据的时候，只出现一次的特征可能会有百万个，这个选项就会在这样的情况下起作用了。
+
+    -p NUM
+    如果电脑有多个CPU ,那么可以通过多线程提升训练速度。NUM是线程数量。
+
+    举一个带参数的命令例子：
+    clr_learn -f 3 -c 1.5 tempalte train.data model##过滤掉了频数低于3的特征，并且设超参数为1.5
+```
+
 - crf_test -m model test.data >output.txt   测试数据
-- conlleval.pl < output.txt   评估效果
+- perl conlleval.pl < output.txt   评估效果
+```
+1. perl安装  官网：https://www.perl.org/get.html
+2. https://www.clips.uantwerpen.be/conll2000/chunking/conlleval.txt下载conlleval.txt并改名为conlleval.pl
+3. 注：使用评测工具前要将评测文件中的所有制表位转换成空格，否则评测工具会出错。
+```
 
 ## 结构
 - template为特征模版；
@@ -42,5 +65,18 @@
 ## 遇到的难题
 - Windows下：improt CRFPP失败
 - https://blog.csdn.net/likianta/article/details/86318565(solution method)
+
+## resources目录结构
+- conlleval.pl
+- crf_learn.exe
+- crf_test.exe
+- libcrfpp.dll
+- model
+- train.txt
+- test.txt
+- output.txt
+- template
+- 注解：conlleval.pl测评脚本，
+
 
 
