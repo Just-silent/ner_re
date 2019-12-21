@@ -1,8 +1,0 @@
-https://github.com/hankcs/pyhanlp/tree/master/tests/demos
-https://github.com/hankcs/HanLP/tree/master/src/test/java/com/hankcs/demo
-https://blog.csdn.net/FontThrone/article/details/82794163
-https://www.jianshu.com/p/68b999d9e552
-https://www.jianshu.com/p/99cbfc1779c6
-https://github.com/twjiang/fact_triple_extraction/blob/master/fact_triple_extraction.py
-https://pyltp.readthedocs.io/zh_CN/develop/api.html
-http://ltp.ai/
