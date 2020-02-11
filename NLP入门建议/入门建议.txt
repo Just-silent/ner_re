@@ -1,0 +1,12 @@
+1. 首先熟悉NLP基本任务（这里主要涉及序列问题）
+2. 针对各个任务的处理模式（数据预处理、搭建模型、训练、预测等）
+3. 学习一个框架（这里使用pytorch）
+4. clone具体项目，理解流程
+5. 针对具体问题，自己搭建模型
+
+
+资料（针对上面5方面）：
+1&2. 了解NLP ：书籍，《nndl》前8章大致浏览一遍   地址：https://share.weiyun.com/5oT3lMD
+3. 学习框架：视频，龙老师   地址：https://share.weiyun.com/5L3bNUr
+4. GitHub：地址：https://github.com/Just-silent
+5. 暂时看4中的项目
