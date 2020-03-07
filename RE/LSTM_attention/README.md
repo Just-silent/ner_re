@@ -1,4 +1,4 @@
-# ChineseNRE
+# ChineseRE
 
 本项目使用
 + python 2.7
