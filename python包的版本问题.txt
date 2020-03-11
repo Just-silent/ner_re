@@ -1,0 +1,2 @@
+python -m spacy info      to check the spacy version 
+python -m spacy  validate    to check whether the model version is compatible with the spacy version
